@@ -1,0 +1,308 @@
+body {
+    background-color: darkolivegreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(246, 239, 216);
+
+  }
+/*nav bar*/
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #full-nav li {
+    float: inline-start;
+    font-size: 20px;
+
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Barlow", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  li a:hover {
+    background-color: #825f81;
+  }
+
+  #burger-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+  }
+
+  #burger-button {
+    color:rgb(246, 239, 216);
+    font-size: 40px;
+    margin-left: 20px;
+   
+  }
+
+  #dropdown-menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Barlow", serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 10rem;
+  }
+
+  
+
+
+  /* about me */
+ #about-me-img1 {
+    height: 50rem;
+    width:auto;
+    border-radius: 8px;
+    margin-right: 5rem;        
+}
+
+
+#about-me-content{
+    font-family: "Barlow", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-left: 8rem;
+  
+
+}
+
+@media screen and (min-width: 1100px) {
+  
+  .about-me-container {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    row-gap: 40px;
+    margin-left: 1rem;
+}
+
+
+}
+
+@media screen and (max-width:1100px) {
+
+#about-me-img-1-container {
+  text-align: center;
+}
+
+#about-me-content{
+  font-family: "Barlow", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1 rem;
+  margin-left: 2rem;
+
+
+}
+#about-me-img1 {
+  height: 50rem;
+  width:auto;
+  border-radius: 8px;
+  margin:auto;
+}
+
+
+
+}
+
+
+/*home page */
+
+#home-page-content {
+    font-family: "Barlow", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 4rem;
+    text-align: center;
+  
+
+}
+
+
+
+/* gallery page */
+
+.gallery-page-container{
+  margin:20px;
+  padding:0;
+  text-align: center;
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows:100px 300px;
+  grid-gap:10px;
+  grid-auto-flow:dense; /*fills in any holes*/
+}
+
+
+
+.gallery-item{
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+.gallery-item .image{
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+ 
+.gallery-item .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%; /*centers the image in case it doesnt fit the sizing*/
+  cursor: pointer; /*hand on hover*/
+  transition: .5s ease-in-out;
+
+}
+
+/*enlage image on hover*/
+.gallery-item:hover .image img{
+  transform: scale(1.5);
+}
+
+/*gallery images text settings*/
+
+.gallery-item .gallery-img-title{
+  opacity:0; /*wont see until hovered*/
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%); /*sliding text backwards to make text true centered*/
+  color:rgb(246, 239, 216);
+  font-size: 25px;
+  pointer-events: none; /*wont interfere with on click events prior to this*/
+  z-index:4; /*text stays infront of image */
+  transition: .3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-img-title{
+  opacity:1; /*opacity is fading to 1 on hover*/
+  animation: move-down .3s linear;
+  padding:1em;
+  width:100%;
+}
+
+/*width span settings*/
+.w-1 {
+  grid-column: span 1;
+
+}
+
+.w-2 {
+  grid-column: span 2;
+
+}
+
+
+.w-3 {
+  grid-column: span 3;
+
+}
+
+
+.w-4 {
+  grid-column: span 4;
+
+}
+
+
+.w-5 {
+  grid-column: span 5;
+
+}
+
+
+.w-6 {
+  grid-column: span 6;
+
+}
+
+/*height span settings*/
+.h-1 {
+  grid-row: span 1;
+
+}
+
+.h-2 {
+  grid-row: span 2;
+
+}
+
+.h-3 {
+  grid-row: span 3;
+
+}
+
+.h-4 {
+  grid-row: span 4;
+
+}
+
+.h-5 {
+  grid-row: span 5;
+
+}
+
+.h-6 {
+  grid-row: span 6;
+
+}
+
+@media screen and (max-width:700px){
+  
+  .gallery-page-container{
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+}
+
+/*animation setting for move down function*/
+@keyframes move-down{
+  0% {
+    top:10%
+  }
+
+  50% {
+    top:35%
+  }
+
+  100% {
+    top:50%
+  }
+}
+
+
