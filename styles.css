@@ -60,8 +60,8 @@ body {
 
   #burger-button {
     color:rgb(246, 239, 216);
-    font-size: 85px;
-    margin-left:100px;
+    font-size: 110px;
+    margin-left:50px;
    
   }
 
@@ -76,7 +76,7 @@ body {
     font-style: normal;
     width: 20rem;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 60px;
     background-color:#333 ;
   }
 
