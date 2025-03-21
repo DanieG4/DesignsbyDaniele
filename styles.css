@@ -162,7 +162,7 @@ height:20rem;
     font-weight: 400;
     font-style: normal;
     color: rgb(246, 239, 216);
-    margin-top:10rem;
+    /* margin-top:10rem; */
     /* margin-bottom: 1rem; */
 }
 
@@ -175,6 +175,11 @@ height:20rem;
     margin-top:10rem;
     font-size: 3.5rem;
     }
+
+  #homepagetitle{
+  margin-top:10rem;
+}
+
 }
 
 /* Screen width is  more than 1100px but less than 1500px */
@@ -187,6 +192,10 @@ height:20rem;
     font-size: 3rem;
 
     }
+    #homepagetitle{
+      margin-top:10rem;
+    }
+
 }
 
 /* Screen width is less than 1100px */
@@ -197,20 +206,24 @@ height:20rem;
   margin-top:1rem;
   font-size: 2rem;
   }
+
+  #homepagetitle{
+    margin-top:10rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   #homepagetitle{
     margin-bottom: 1rem;
-  }
+    margin-top:10rem;
+    }
+  
   #homepagetagline{
   margin-bottom:15rem;
   margin-top:1rem;
   font-size: 2rem;
   }
 }
-
-
 
 
 
@@ -244,8 +257,17 @@ height:20rem;
     gap:40px;
   
   }
+  
+  #homepagetagline{
+    margin-bottom:5rem;
+    margin-top:1rem;
+    font-size: 1rem;
+    }
 
-   
+    #homepagetitle{
+      margin-bottom: 1rem;
+      margin-top:2rem;
+    }
 
 }
 
@@ -334,14 +356,14 @@ height:20rem;
   color:rgba(255, 255, 255, .5);
   border-radius: .25rem;
   padding: 0 .5rem;
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, .3);
 
 }
 
 .carousel-button:hover,
 .carousel-button:focus {
   color:white;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, .6);
 }
 
 .carousel-button.prev {
