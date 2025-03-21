@@ -1,7 +1,8 @@
 body {
-    background-color: darkolivegreen;
+    background-color: rgb(85, 100, 84);
     background-repeat: no-repeat;
     background-size: cover;
+    margin:0;
   }
 
 
@@ -16,17 +17,19 @@ body {
   }
 /*nav bar*/
 
-  ul {
+  #full-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    
   }
   
   #full-nav li {
     float: inline-start;
     font-size: 20px;
+    
 
   }
   
@@ -36,13 +39,14 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: "Barlow", serif;
-    font-weight: 300;
+    font-family:"Work Sans", sans-serif;;
+    font-weight: 500;
     font-style: normal;
+  
   }
 
   li a:hover {
-    background-color: #825f81;
+    background-color: rgb(130, 95, 129);
   }
 
   #burger-nav {
@@ -56,7 +60,7 @@ body {
 
   #burger-button {
     color:rgb(246, 239, 216);
-    font-size: 40px;
+    font-size: 60px;
     margin-left: 20px;
    
   }
@@ -67,10 +71,12 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: "Barlow", serif;
+    font-family: "Montserrat Alternates", sans-serif;
     font-weight: 300;
     font-style: normal;
-    width: 10rem;
+    width: 15rem;
+    list-style-type: none;
+    font-size: larger;
   }
 
   
@@ -86,11 +92,13 @@ body {
 
 
 #about-me-content{
-    font-family: "Barlow", serif;
+    font-family:  "Work Sans", sans-serif;;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5rem;
     margin-left: 8rem;
+    color:rgb(246, 239, 216);
+  
   
 
 }
@@ -109,14 +117,14 @@ body {
 
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1099px) {
 
 #about-me-img-1-container {
   text-align: center;
 }
 
 #about-me-content{
-  font-family: "Barlow", serif;
+  font-family:"Work Sans", sans-serif;;
   font-weight: 300;
   font-style: normal;
   font-size: 1 rem;
@@ -138,15 +146,276 @@ body {
 
 /*home page */
 
-#home-page-content {
-    font-family: "Barlow", serif;
+#homepagebackground {
+background-image: url("background.png");
+height:20rem;
+}
+
+
+
+#homepagetitle {
+  font-size: 7rem;
+    text-align: center;
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(246, 239, 216);
+    margin-top:10rem;
+    /* margin-bottom: 1rem; */
+}
+
+/* Screen width is more than 1500px */
+@media screen and (min-width: 1500px) {
+ 
+
+  #homepagetagline{
+    margin-bottom:35rem;
+    margin-top:10rem;
+    font-size: 3.5rem;
+    }
+}
+
+/* Screen width is  more than 1100px but less than 1500px */
+@media screen and (max-width: 1499px) and (min-width: 1250px) {
+ 
+
+  #homepagetagline{
+    margin-bottom:35rem;
+    margin-top:10rem;
+    font-size: 3rem;
+
+    }
+}
+
+/* Screen width is less than 1100px */
+@media screen and (max-width: 1249px) and (min-width: 1025px) {
+ 
+  #homepagetagline{
+  margin-bottom:15rem;
+  margin-top:1rem;
+  font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #homepagetitle{
+    margin-bottom: 1rem;
+  }
+  #homepagetagline{
+  margin-bottom:15rem;
+  margin-top:1rem;
+  font-size: 2rem;
+  }
+}
+
+
+
+
+
+#homepagetagline {
+    font-family: "Montserrat Alternates", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 4rem;
+    /* font-size: 3.5rem; */
     text-align: center;
+    /* margin-bottom:35rem;
+    margin-top:10rem; */
   
 
 }
+
+
+
+@media screen and (min-width: 500px) {
+  #creativespacesection{
+    display:flex;
+    gap:40px;
+  
+  }
+}
+
+@media screen and (max-width: 499px) {
+
+  #creativespacesection{
+    display:inline-block;
+    align-items: center;
+    gap:40px;
+  
+  }
+
+   
+
+}
+
+
+#servicescontenttitle{
+  font-family:"Work Sans", sans-serif;;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5rem;
+  text-decoration: none;
+  color: rgb(246, 239, 216);
+
+}
+
+
+#servicescontentinfo {
+  font-family:"Work Sans", sans-serif;;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(246, 239, 216);
+  margin-right:40px;
+}
+
+
+
+#designserviceslink {
+  font-family:"Work Sans", sans-serif;;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(246, 239, 216);
+
+}
+
+.carouselandservicescontainer{
+  display:grid;
+
+}
+
+
+
+/*home page image carousel settings*/
+.carousel {
+  width:50vw;
+  height:70vh;
+  position: relative; 
+  margin-left:1rem;
+}
+
+.carousel > ul {
+  list-style: none;
+}
+
+
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity:0;
+
+}
+
+.slide > img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit: cover; /*maintain object ratio*/
+}
+
+.slide[data-active] {
+  opacity:1;
+}
+
+.carousel-button {
+  position:absolute;
+  z-index: 2;
+  background:none;
+  border:none;
+  font-size: 4rem;
+  top:50%;
+  transform: translateY(-50%); /*pushes arrows back to the center*/
+  cursor: pointer;
+  color:rgba(255, 255, 255, .5);
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color:white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button.prev {
+  left:1rem;
+}
+
+.carousel-button.next {
+  right:1rem;
+}
+
+/* *************************************************** */
+
+#homepage-content {
+  font-family: "Work Sans", sans-serif;;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom:3rem;
+  margin-top:15rem;
+  background-color: rgb(111, 137, 124);
+  padding:3rem;
+  color:rgb(246, 239, 216);
+
+}
+
+#letsconnecttitle {
+  font-family:"Work Sans", sans-serif;;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4rem;
+  text-decoration: none;
+  color: rgb(246, 239, 216);
+  margin: 2rem;
+
+}
+
+#letsconnectcontent {
+  font-family:"Work Sans", sans-serif;;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(246, 239, 216);
+  margin-right:40px;
+
+
+}
+
+#letsconnectimage {
+  height:50vh;
+  width:30vw;
+  object-fit:cover;
+  margin-bottom:3rem;
+}
+
+.letsconnectcontainer {
+  display:flex;
+  gap:40px;
+  margin-left: 3rem;
+  margin-right:3rem;
+}
+
+#instagramtag {
+  height:3rem;
+  width:3rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 
