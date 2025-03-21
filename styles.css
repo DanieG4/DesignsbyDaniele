@@ -166,7 +166,7 @@ height:20rem;
     /* margin-bottom: 1rem; */
 }
 
-/* Screen width is more than 1500px */
+/* Homepage media queries */
 @media screen and (min-width: 1500px) {
  
 
@@ -182,7 +182,7 @@ height:20rem;
 
 }
 
-/* Screen width is  more than 1100px but less than 1500px */
+
 @media screen and (max-width: 1499px) and (min-width: 1250px) {
  
 
@@ -198,8 +198,8 @@ height:20rem;
 
 }
 
-/* Screen width is less than 1100px */
-@media screen and (max-width: 1249px) and (min-width: 1025px) {
+
+@media screen and (max-width: 1249px) and (min-width: 1100px) {
  
   #homepagetagline{
   margin-bottom:15rem;
@@ -212,19 +212,77 @@ height:20rem;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  #homepagetitle{
-    margin-bottom: 1rem;
-    margin-top:10rem;
-    }
-  
+@media screen and (max-width: 1099px) and (min-width: 1025px) {
+ 
   #homepagetagline{
-  margin-bottom:15rem;
-  margin-top:1rem;
-  font-size: 2rem;
+  margin-bottom:5rem;
+  margin-top:20rem;
+  font-size: 4rem;
+  }
+
+  #homepagetitle{
+    margin-top:10rem;
   }
 }
 
+
+
+@media screen and (max-width: 1024px){
+  #homepagetagline{
+    margin-bottom:5rem;
+    margin-top:20rem;
+    font-size: 4rem;
+    }
+  
+    #homepagetitle{
+      margin-top:10rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+  #creativespacesection{
+    display:flex;
+    gap:40px;
+  
+  }
+
+  .carousel {
+    width:50vw;
+    height:70vh;
+    position: relative; 
+    margin-left:1rem;
+  }
+}
+
+@media screen and (max-width: 699px) {
+
+  #creativespacesection{
+    /* display:block; */
+    align-items: center;
+    /* gap:40px; */
+  
+  }
+
+  .carousel {
+    display: block;
+    width:50vw;
+    height:70vh;
+    position: relative; 
+    margin-left:1rem;
+  }
+  
+  #homepagetagline{
+    margin-bottom:5rem;
+    margin-top:1rem;
+    font-size: 1rem;
+    }
+
+    #homepagetitle{
+      margin-bottom: 1rem;
+      margin-top:2rem;
+    }
+
+}
 
 
 #homepagetagline {
@@ -241,35 +299,7 @@ height:20rem;
 
 
 
-@media screen and (min-width: 500px) {
-  #creativespacesection{
-    display:flex;
-    gap:40px;
-  
-  }
-}
 
-@media screen and (max-width: 499px) {
-
-  #creativespacesection{
-    display:inline-block;
-    align-items: center;
-    gap:40px;
-  
-  }
-  
-  #homepagetagline{
-    margin-bottom:5rem;
-    margin-top:1rem;
-    font-size: 1rem;
-    }
-
-    #homepagetitle{
-      margin-bottom: 1rem;
-      margin-top:2rem;
-    }
-
-}
 
 
 #servicescontenttitle{
@@ -305,20 +335,9 @@ height:20rem;
 
 }
 
-.carouselandservicescontainer{
-  display:grid;
-
-}
-
-
 
 /*home page image carousel settings*/
-.carousel {
-  width:50vw;
-  height:70vh;
-  position: relative; 
-  margin-left:1rem;
-}
+
 
 .carousel > ul {
   list-style: none;
