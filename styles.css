@@ -15,6 +15,7 @@ body {
     color: rgb(246, 239, 216);
 
   }
+  /*******************************************************************/
 /*nav bar*/
 
   #full-nav {
@@ -83,7 +84,7 @@ body {
 
   
 
-
+/*******************************************************************/
   /* about me */
  #about-me-img1 {
     height: 50rem;
@@ -145,18 +146,18 @@ body {
 
 }
 
-
+/*******************************************************************/
 /*home page */
 
-#homepagebackground {
+#homepage-background {
 background-image: url("background.png");
 height:20rem;
 }
 
 
 
-#homepagetitle {
-  font-size: 7rem;
+#homepage-title {
+  /* font-size: 7rem; */
     text-align: center;
     font-family: "Chicle", serif;
     font-weight: 400;
@@ -170,14 +171,15 @@ height:20rem;
 @media screen and (min-width: 1500px) {
  
 
-  #homepagetagline{
+  #homepage-tagline{
     margin-bottom:35rem;
     margin-top:10rem;
     font-size: 3.5rem;
     }
 
-  #homepagetitle{
+  #homepage-title{
   margin-top:10rem;
+  font-size: 7rem;
 }
 
 }
@@ -186,14 +188,15 @@ height:20rem;
 @media screen and (max-width: 1499px) and (min-width: 1250px) {
  
 
-  #homepagetagline{
+  #homepage-tagline{
     margin-bottom:35rem;
     margin-top:10rem;
     font-size: 3rem;
 
     }
-    #homepagetitle{
+    #homepage-title{
       margin-top:10rem;
+      font-size: 7rem;
     }
 
 }
@@ -201,46 +204,49 @@ height:20rem;
 
 @media screen and (max-width: 1249px) and (min-width: 1100px) {
  
-  #homepagetagline{
+  #homepage-tagline{
   margin-bottom:15rem;
   margin-top:1rem;
   font-size: 2rem;
   }
 
-  #homepagetitle{
+  #homepage-title{
     margin-top:10rem;
+    font-size: 7rem;
   }
 }
 
 @media screen and (max-width: 1099px) and (min-width: 1025px) {
  
-  #homepagetagline{
+  #homepage-tagline{
   margin-bottom:5rem;
   margin-top:20rem;
   font-size: 4rem;
   }
 
-  #homepagetitle{
+  #homepage-title{
     margin-top:10rem;
+    font-size: 7rem;
   }
 }
 
 
 
-@media screen and (max-width: 1024px){
-  #homepagetagline{
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  #homepage-tagline{
     margin-bottom:5rem;
     margin-top:20rem;
     font-size: 4rem;
     }
   
-    #homepagetitle{
+    #homepage-title{
       margin-top:10rem;
+      font-size: 7rem;
     }
 }
 
 @media screen and (min-width: 700px) {
-  #creativespacesection{
+  #creative-space-section{
     display:flex;
     gap:40px;
   
@@ -256,7 +262,7 @@ height:20rem;
 
 @media screen and (max-width: 699px) {
 
-  #creativespacesection{
+  #creative-space-section{
     /* display:block; */
     align-items: center;
     /* gap:40px; */
@@ -271,21 +277,24 @@ height:20rem;
     margin-left:1rem;
   }
   
-  #homepagetagline{
+  #homepage-tagline{
     margin-bottom:5rem;
     margin-top:1rem;
     font-size: 1rem;
     }
 
-    #homepagetitle{
+    #homepage-title{
       margin-bottom: 1rem;
       margin-top:2rem;
+      font-size: 4rem;
+      
     }
 
 }
 
+/******************************************/
 
-#homepagetagline {
+#homepage-tagline {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -299,10 +308,7 @@ height:20rem;
 
 
 
-
-
-
-#servicescontenttitle{
+#services-content-title{
   font-family:"Work Sans", sans-serif;;
   font-weight: 500;
   font-style: normal;
@@ -313,7 +319,7 @@ height:20rem;
 }
 
 
-#servicescontentinfo {
+#services-content-info {
   font-family:"Work Sans", sans-serif;;
   font-weight: 300;
   font-style: normal;
@@ -325,7 +331,7 @@ height:20rem;
 
 
 
-#designserviceslink {
+#design-services-link {
   font-family:"Work Sans", sans-serif;;
   font-weight: 300;
   font-style: normal;
@@ -393,7 +399,6 @@ height:20rem;
   right:1rem;
 }
 
-/* *************************************************** */
 
 #homepage-content {
   font-family: "Work Sans", sans-serif;;
@@ -409,7 +414,7 @@ height:20rem;
 
 }
 
-#letsconnecttitle {
+#letsconnect-title {
   font-family:"Work Sans", sans-serif;;
   font-weight: 500;
   font-style: normal;
@@ -420,7 +425,7 @@ height:20rem;
 
 }
 
-#letsconnectcontent {
+#letsconnect-content {
   font-family:"Work Sans", sans-serif;;
   font-weight: 300;
   font-style: normal;
@@ -432,14 +437,14 @@ height:20rem;
 
 }
 
-#letsconnectimage {
+#letsconnect-image {
   height:50vh;
   width:30vw;
   object-fit:cover;
   margin-bottom:3rem;
 }
 
-.letsconnectcontainer {
+.letsconnect-container {
   display:flex;
   gap:40px;
   margin-left: 3rem;
@@ -451,15 +456,7 @@ height:20rem;
   width:3rem;
 }
 
-
-
-
-
-
-
-
-
-
+/*******************************************************************/
 
 
 /* gallery page */
@@ -617,4 +614,38 @@ height:20rem;
   }
 }
 
+/*******************************************************************/
+/*services page*/
 
+.services-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap:40px;
+    margin-left:40px;
+    margin-right:40px;
+    justify-content: center;
+}
+
+#service-image {
+  width:20rem;
+  height:20rem;
+}
+
+#services-tagline {
+  
+    font-family:"Work Sans", sans-serif;;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    text-decoration: none;
+    color: rgb(246, 239, 216);
+    text-align: center;
+  margin-bottom:3rem;
+  margin-top:5rem;
+  background-color: rgb(111, 137, 124);
+  padding:3rem;
+    
+  
+}
