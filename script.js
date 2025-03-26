@@ -1,21 +1,10 @@
 
-const fullNav = document.querySelector('#full-nav');
-const burgerNav = document.querySelector('#burger-nav');
+// const fullNav = document.querySelector('#full-nav');
+const burgerButton = document.querySelector('#burger-button');
 const dropdownMenu = document.querySelector('#dropdown-menu')
 
-function navResize () {
-    dropdownMenu.style.display = 'none'
-    if (window.innerWidth < 1100) {
-        fullNav.style.display="none"
-        burgerNav.style.display=""
-    } else {
-        burgerNav.style.display="none"
-        fullNav.style.display=""  
-    }
-}
 
-window.addEventListener ("resize", navResize)
-window.addEventListener ("load", navResize)
+
 
 function toggleDropdown() {
     if (dropdownMenu.style.display === 'none') {
@@ -25,7 +14,12 @@ function toggleDropdown() {
     }
 }
 
-burgerNav.addEventListener("click", toggleDropdown) 
+burgerButton.addEventListener("click", toggleDropdown) 
+
+
+
+
+
 
 /* slider settings on homepage*/
 const buttons = document.querySelectorAll("[data-carousel-button]")

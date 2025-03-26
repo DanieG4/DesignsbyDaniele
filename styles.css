@@ -18,70 +18,116 @@ body {
   /*******************************************************************/
 /*nav bar*/
 
-  #full-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    
-  }
+ 
   
-  #full-nav li {
-    float: inline-start;
-    font-size: 20px;
+
+  @media screen and (min-width:1100px) {
+    #full-nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      
+    }
     
-
-  }
+    #full-nav li {
+      float: inline-start;
+      font-size: 20px;
+      
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family:"Work Sans", sans-serif;;
-    font-weight: 500;
-    font-style: normal;
-  
-  }
-
-  li a:hover {
-    background-color: rgb(130, 95, 129);
-  }
-
-  #burger-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    }
     
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family:"Work Sans", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    
+    }
+  
+    li a:hover {
+      background-color: rgb(130, 95, 129);
+    }
+
+    #dropdown-nav {
+      display:none;
+    }
+    /* #burger-nav {
+      height:0;
+    }
+
+    #dropdown-menu{
+      display:none;
+    } */
+
   }
 
-  #burger-button {
-    color:rgb(246, 239, 216);
-    font-size: 110px;
-    margin-left:50px;
-   
+  @media screen and (max-width:1099px) {
+    #full-nav {
+      display:none;
+    }
+    
+    #burger-nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      height:fit-content;
+      
+    }
+  
+    #burger-button {
+      color:rgb(246, 239, 216);
+      font-size: 110px;
+      margin-left:50px;
+     
+    }
+    
+    #dropdown-menu {
+      color: white;
+      text-align: center;
+      padding: 0px 14px 10px 16px;
+      text-decoration: none;
+      font-family: "Work Sans", sans-serif;
+      font-weight:light;
+      font-style: normal;
+      width: 100%;
+      list-style-type: none;
+      font-size: 60px;
+      background-color:#333 ;
+      margin-top:0;
+    }
+
+    #dropdown-nav {
+      display:block;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family:"Work Sans", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    
+    }
+  
+    li a:hover {
+      background-color: rgb(130, 95, 129);
+    }
   }
 
-  #dropdown-menu {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0px 14px 10px 16px;
-    text-decoration: none;
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight:light;
-    font-style: normal;
-    width: 100%;
-    list-style-type: none;
-    font-size: 60px;
-    background-color:#333 ;
-    margin-top:0;
-  }
+ 
 
+  
   
 
 /*******************************************************************/
@@ -220,7 +266,7 @@ height:20rem;
  
   #homepage-tagline{
   margin-bottom:5rem;
-  margin-top:20rem;
+  margin-top:15rem;
   font-size: 4rem;
   }
 
@@ -235,8 +281,8 @@ height:20rem;
 @media screen and (max-width: 1024px) and (min-width: 700px) {
   #homepage-tagline{
     margin-bottom:5rem;
-    margin-top:20rem;
-    font-size: 4rem;
+    margin-top:15rem;
+    font-size: 3rem;
     }
   
     #homepage-title{
@@ -264,8 +310,9 @@ height:20rem;
 
   #creative-space-section{
     /* display:block; */
-    align-items: center;
-    /* gap:40px; */
+     align-items: center; 
+   
+    
   
   }
 
@@ -283,19 +330,18 @@ height:20rem;
     font-size: 1rem;
     }
 
-    #homepage-title{
-      margin-bottom: 1rem;
-      margin-top:2rem;
-      font-size: 4rem;
-      
+  #homepage-title{
+    margin-bottom: 1rem;
+    margin-top:2rem;
+    font-size: 2rem;
     }
 
-}
+} 
 
 /******************************************/
 
 #homepage-tagline {
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family:"Quicksand", sans-serif;
     font-weight: 300;
     font-style: normal;
     /* font-size: 3.5rem; */
@@ -619,33 +665,70 @@ height:20rem;
 
 .services-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap:10px;
+    grid-row-gap:10px ;
+    margin-left: 45px;
+    margin-right: 45px;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 40px;
     grid-column-gap:40px;
     margin-left:40px;
     margin-right:40px;
     justify-content: center;
+} */
 }
-
 #service-image {
-  width:20rem;
-  height:20rem;
+  display:block;
+  width:100%;
 }
 
 #services-tagline {
   
-    font-family:"Work Sans", sans-serif;;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 3rem;
-    text-decoration: none;
-    color: rgb(246, 239, 216);
-    text-align: center;
+  font-family:"Work Sans", sans-serif;;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+  text-decoration: none;
+  color: rgb(246, 239, 216);
+  text-align: center;
   margin-bottom:3rem;
   margin-top:5rem;
   background-color: rgb(111, 137, 124);
   padding:3rem;
     
   
+}
+
+.process-info {
+
+}
+
+.process-title {
+  font-family:"Work Sans", sans-serif;;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3rem;
+  text-decoration: none;
+  color: rgb(246, 239, 216);
+  margin-left:40px;
+  margin-right:40px;
+  text-decoration:underline;
+}
+
+.process-content{
+  font-family:"Work Sans", sans-serif;;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(246, 239, 216);
+  margin-bottom:40px;
+  margin-top:20px;
+  margin-left:20px;
+  margin-right:20px;
+
 }
