@@ -1,20 +1,24 @@
 
-// const fullNav = document.querySelector('#full-nav');
-const burgerButton = document.querySelector('#burger-button');
-const dropdownMenu = document.querySelector('#dropdown-menu')
-
-
-
-
 function toggleDropdown() {
-    if (dropdownMenu.style.display === 'none') {
-        dropdownMenu.style.display=""
+    if ($('#dropdown-menu').css("display") === "none") {
+        $('#dropdown-menu').show() 
     } else {
-        dropdownMenu.style.display='none'
+        $('#dropdown-menu').hide()
     }
+
+    // $('#dropdown-menu').css("display") === "none" ? $('#dropdown-menu').show() : $('#dropdown-menu').hide()
+
 }
 
-burgerButton.addEventListener("click", toggleDropdown) 
+$('#burger-button').click(toggleDropdown)
+
+
+// When you click the element that has the ID of burger-button the function
+// toggleDropdown will run 
+// When toggleDrowndown runs if the element with the id dropdown-menu has a css set as 
+// display of none it will set the css display to show if it has a css display 
+// of anything else then it will set it to hide 
+
 
 
 
